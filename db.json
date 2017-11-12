@@ -18,19 +18,19 @@
   ],
   "albums": [
     {
-      "userId": 1
+      "userId": 1,
       "name": "album1"
     },
     {
-      "userId": 1
+      "userId": 1,
       "name": "album2"
     },
     {
-      "userId": 2
+      "userId": 2,
       "name": "album3"
     },
     {
-      "userId": 4
+      "userId": 4,
       "name": "album4"
     }
   ]
