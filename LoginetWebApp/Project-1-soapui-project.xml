@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="439def1d-a434-49ce-8dd0-6d9ad946b5d2" name="Project 1" activeEnvironment="Default" resourceRoot="" soapui-version="5.3.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="586d8861-96a2-4485-aff0-376c532b6c39" wsaVersion="NONE" name="LoginetWebServiceSoap12" type="wsdl" bindingName="{http://tempuri.org/}LoginetWebServiceSoap12" soapVersion="1_2" anonymous="optional" definition="http://localhost:10789/LoginetWebService.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://localhost:10789/LoginetWebService.asmx</con:endpoint></con:endpoints><con:operation id="081d05de-527c-48f3-a497-7098ddc46c46" isOneWay="false" action="http://tempuri.org/GetAlbum" name="GetAlbum" bindingOperationName="GetAlbum" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e53b7ed2-af62-49de-8d9b-aff1a4595a05" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10789/LoginetWebService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:GetAlbum>\r
+         <!--Optional:-->\r
+         <tem:request>\r
+            <tem:ResponseType>?</tem:ResponseType>\r
+            <tem:AlbumId>?</tem:AlbumId>\r
+         </tem:request>\r
+      </tem:GetAlbum>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/LoginetWebServiceSoap/GetAlbumRequest"/></con:call></con:operation><con:operation id="16e81c39-7b63-41bc-8c25-79b6733e12c7" isOneWay="false" action="http://tempuri.org/GetAlbums" name="GetAlbums" bindingOperationName="GetAlbums" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3e14db38-c6be-44fb-b870-3956cc90224d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10789/LoginetWebService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:GetAlbums>\r
+         <!--Optional:-->\r
+         <tem:request>\r
+            <tem:ResponseType>?</tem:ResponseType>\r
+         </tem:request>\r
+      </tem:GetAlbums>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/LoginetWebServiceSoap/GetAlbumsRequest"/></con:call></con:operation><con:operation id="dde3d3ce-4c12-4905-9bf4-602f395c62ff" isOneWay="false" action="http://tempuri.org/GetUser" name="GetUser" bindingOperationName="GetUser" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3e003bb1-fc6b-4be9-9ad3-2df6c24d8c71" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10789/LoginetWebService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:GetUser>\r
+         <!--Optional:-->\r
+         <tem:request>\r
+            <tem:ResponseType>?</tem:ResponseType>\r
+            <tem:UserId>?</tem:UserId>\r
+         </tem:request>\r
+      </tem:GetUser>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/LoginetWebServiceSoap/GetUserRequest"/></con:call></con:operation><con:operation id="0e555838-a6b9-43cf-9dd1-9190376a07c3" isOneWay="false" action="http://tempuri.org/GetUserAlbums" name="GetUserAlbums" bindingOperationName="GetUserAlbums" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="2250266e-4167-4beb-b532-e2b7a6bdf60f" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10789/LoginetWebService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:GetUserAlbums>\r
+         <!--Optional:-->\r
+         <tem:request>\r
+            <tem:ResponseType>?</tem:ResponseType>\r
+            <tem:UserId>?</tem:UserId>\r
+         </tem:request>\r
+      </tem:GetUserAlbums>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/LoginetWebServiceSoap/GetUserAlbumsRequest"/></con:call></con:operation><con:operation id="859baf60-1aa9-45f3-b1dc-4d1b5bcb172a" isOneWay="false" action="http://tempuri.org/GetUsers" name="GetUsers" bindingOperationName="GetUsers" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="02671f79-cd3c-4867-a5b1-ca032537c785" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10789/LoginetWebService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:GetUsers>\r
+         <!--Optional:-->\r
+         <tem:request>\r
+            <tem:ResponseType>?</tem:ResponseType>\r
+         </tem:request>\r
+      </tem:GetUsers>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/LoginetWebServiceSoap/GetUsersRequest"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="f4b7437d-6ee8-4dc0-afd4-ea42b7145d99" wsaVersion="NONE" name="LoginetWebServiceSoap" type="wsdl" bindingName="{http://tempuri.org/}LoginetWebServiceSoap" soapVersion="1_1" anonymous="optional" definition="http://localhost:10789/LoginetWebService.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:10789/LoginetWebService.asmx?WSDL"><con:part><con:url>http://localhost:10789/LoginetWebService.asmx?WSDL</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://tempuri.org/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>Тестовый сервис</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetUsers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="tns:GetUsersRequest"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetUsersRequest">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:RequestBase"/>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="RequestBase" abstract="true">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ResponseType" type="tns:ResponseType"/>
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="ResponseType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Xml"/>
+          <s:enumeration value="Json"/>
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="GetUsersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUsersResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="tns:GetUserRequest"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetUserRequest">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:RequestBase">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="UserId" type="s:int"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAlbums">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="tns:GetAlbumsRequest"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetAlbumsRequest">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:RequestBase"/>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetAlbumsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAlbumsResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAlbum">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="tns:GetAlbumRequest"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetAlbumRequest">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:RequestBase">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="AlbumId" type="s:int"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetAlbumResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAlbumResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserAlbums">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="tns:GetUserAlbumsRequest"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetUserAlbumsRequest">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:RequestBase">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="UserId" type="s:int"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetUserAlbumsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserAlbumsResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetUsersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUsers"/>
+  </wsdl:message>
+  <wsdl:message name="GetUsersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUsersResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetUserSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUser"/>
+  </wsdl:message>
+  <wsdl:message name="GetUserSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetAlbumsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAlbums"/>
+  </wsdl:message>
+  <wsdl:message name="GetAlbumsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAlbumsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetAlbumSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAlbum"/>
+  </wsdl:message>
+  <wsdl:message name="GetAlbumSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAlbumResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetUserAlbumsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserAlbums"/>
+  </wsdl:message>
+  <wsdl:message name="GetUserAlbumsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserAlbumsResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="LoginetWebServiceSoap">
+    <wsdl:operation name="GetUsers">
+      <wsdl:documentation>Получение списка всех пользователей</wsdl:documentation>
+      <wsdl:input message="tns:GetUsersSoapIn"/>
+      <wsdl:output message="tns:GetUsersSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetUser">
+      <wsdl:documentation>Получение пользователя по ID</wsdl:documentation>
+      <wsdl:input message="tns:GetUserSoapIn"/>
+      <wsdl:output message="tns:GetUserSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlbums">
+      <wsdl:documentation>Получение списка всех альбомов</wsdl:documentation>
+      <wsdl:input message="tns:GetAlbumsSoapIn"/>
+      <wsdl:output message="tns:GetAlbumsSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlbum">
+      <wsdl:documentation>Получение альбома по ID</wsdl:documentation>
+      <wsdl:input message="tns:GetAlbumSoapIn"/>
+      <wsdl:output message="tns:GetAlbumSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserAlbums">
+      <wsdl:documentation>Получение всех альбомов пользователя по его ID</wsdl:documentation>
+      <wsdl:input message="tns:GetUserAlbumsSoapIn"/>
+      <wsdl:output message="tns:GetUserAlbumsSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="LoginetWebServiceSoap" type="tns:LoginetWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetUsers">
+      <soap:operation soapAction="http://tempuri.org/GetUsers" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUser">
+      <soap:operation soapAction="http://tempuri.org/GetUser" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlbums">
+      <soap:operation soapAction="http://tempuri.org/GetAlbums" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlbum">
+      <soap:operation soapAction="http://tempuri.org/GetAlbum" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserAlbums">
+      <soap:operation soapAction="http://tempuri.org/GetUserAlbums" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="LoginetWebServiceSoap12" type="tns:LoginetWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetUsers">
+      <soap12:operation soapAction="http://tempuri.org/GetUsers" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUser">
+      <soap12:operation soapAction="http://tempuri.org/GetUser" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlbums">
+      <soap12:operation soapAction="http://tempuri.org/GetAlbums" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlbum">
+      <soap12:operation soapAction="http://tempuri.org/GetAlbum" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserAlbums">
+      <soap12:operation soapAction="http://tempuri.org/GetUserAlbums" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LoginetWebService">
+    <wsdl:documentation>Тестовый сервис</wsdl:documentation>
+    <wsdl:port name="LoginetWebServiceSoap" binding="tns:LoginetWebServiceSoap">
+      <soap:address location="http://localhost:10789/LoginetWebService.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="LoginetWebServiceSoap12" binding="tns:LoginetWebServiceSoap12">
+      <soap12:address location="http://localhost:10789/LoginetWebService.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:10789/LoginetWebService.asmx</con:endpoint></con:endpoints><con:operation id="f1ab8d2d-4de3-49d6-96d8-3b534ebc8f1b" isOneWay="false" action="http://tempuri.org/GetAlbum" name="GetAlbum" bindingOperationName="GetAlbum" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="655e3cc6-4c14-424c-831d-ee9adfd8a71e" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10789/LoginetWebService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetAlbum>\r
+         <!--Optional:-->\r
+         <tem:request>\r
+            <tem:ResponseType>Json</tem:ResponseType>\r
+            <tem:AlbumId>1</tem:AlbumId>\r
+         </tem:request>\r
+      </tem:GetAlbum>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/GetAlbum"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="12b1509a-d128-40c2-a946-0ddf7b113f69" isOneWay="false" action="http://tempuri.org/GetAlbums" name="GetAlbums" bindingOperationName="GetAlbums" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b223f0ed-3878-4308-ac5a-92f2735d230f" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10789/LoginetWebService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetAlbums>\r
+         <!--Optional:-->\r
+         <tem:request>\r
+            <tem:ResponseType>Json</tem:ResponseType>\r
+         </tem:request>\r
+      </tem:GetAlbums>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/GetAlbums"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="6ef504a7-9632-4285-9663-4923e8865294" isOneWay="false" action="http://tempuri.org/GetUser" name="GetUser" bindingOperationName="GetUser" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="01249306-51f9-4afa-bccc-fca952a92116" name="RequestUser1Xml"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10789/LoginetWebService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetUser>\r
+         <!--Optional:-->\r
+         <tem:request>\r
+            <tem:ResponseType>Xml</tem:ResponseType>\r
+            <tem:UserId>1</tem:UserId>\r
+         </tem:request>\r
+      </tem:GetUser>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/GetUser"/><con:wsrmConfig version="1.2"/></con:call><con:call id="81e90b13-2534-46b6-93f5-79228f67d0c3" name="RequestUser1Json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10789/LoginetWebService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetUser>\r
+         <!--Optional:-->\r
+         <tem:request>\r
+            <tem:ResponseType>Json</tem:ResponseType>\r
+            <tem:UserId>1</tem:UserId>\r
+         </tem:request>\r
+      </tem:GetUser>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/GetUser"/><con:wsrmConfig version="1.2"/></con:call><con:call id="814fa783-9de4-4e89-bd45-2a3f7fbb359f" name="RequesNonExistUser"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10789/LoginetWebService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetUser>\r
+         <!--Optional:-->\r
+         <tem:request>\r
+            <tem:ResponseType>Xml</tem:ResponseType>\r
+            <tem:UserId>100500</tem:UserId>\r
+         </tem:request>\r
+      </tem:GetUser>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/GetUser"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="bdd69dd4-d0f7-49fd-a22b-03a0cc18202f" isOneWay="false" action="http://tempuri.org/GetUserAlbums" name="GetUserAlbums" bindingOperationName="GetUserAlbums" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c6a8f7d9-7c1a-455d-89c1-ee7b2dd8cf05" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10789/LoginetWebService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetUserAlbums>\r
+         <!--Optional:-->\r
+         <tem:request>\r
+            <tem:ResponseType>Xml</tem:ResponseType>\r
+            <tem:UserId>1</tem:UserId>\r
+         </tem:request>\r
+      </tem:GetUserAlbums>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/GetUserAlbums"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="5badad7c-ddff-46a6-b70e-44139b592d8c" isOneWay="false" action="http://tempuri.org/GetUsers" name="GetUsers" bindingOperationName="GetUsers" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="bcddffe2-2adf-4d77-a22c-b1c8d14756b2" name="RequestUsersXml"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10789/LoginetWebService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetUsers>\r
+         <!--Optional:-->\r
+         <tem:request>\r
+            <tem:ResponseType>Xml</tem:ResponseType>\r
+         </tem:request>\r
+      </tem:GetUsers>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/GetUsers"/><con:wsrmConfig version="1.2"/></con:call><con:call id="c1181193-288b-47be-a1a3-a29bbae92787" name="RequestUsersJson"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:10789/LoginetWebService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetUsers>\r
+         <!--Optional:-->\r
+         <tem:request>\r
+            <tem:ResponseType>Json</tem:ResponseType>\r
+         </tem:request>\r
+      </tem:GetUsers>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/GetUsers"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

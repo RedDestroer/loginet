@@ -3,6 +3,9 @@ using LoginetWebApp.Domain;
 
 namespace LoginetWebApp.Abstract
 {
+    /// <summary>
+    /// Источник данных для сервиса
+    /// </summary>
     public interface IDataSource
     {
         /// <summary>

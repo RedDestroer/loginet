@@ -5,6 +5,12 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginetWebApp", "LoginetWebApp\LoginetWebApp.csproj", "{FDF49A22-0EA2-4404-AF0B-FDFE5842140B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution items", "{3B84D4FA-52C7-46C5-96B1-4F09B4FED5AB}"
+	ProjectSection(SolutionItems) = preProject
+		Project-1-soapui-project.xml = Project-1-soapui-project.xml
+		ReadMe.txt = ReadMe.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
