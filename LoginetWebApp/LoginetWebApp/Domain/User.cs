@@ -8,13 +8,15 @@ namespace LoginetWebApp.Domain
     [XmlType(Namespace = LoginetWebService.XmlNs)]
     public class User
     {
-        //[JsonProperty("id")]
+        [JsonProperty("id")]
         public int Id { get; set; }
 
-        //[JsonProperty("name")]
+        [JsonProperty("name")]
         public string Name { get; set; }
 
-        //[JsonProperty("email")]
+        [JsonProperty("email")]
+        [XmlIgnore]
+        [JsonIgnore]
         public string Email { get; set; }
     }
 }

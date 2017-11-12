@@ -35,7 +35,7 @@ namespace LoginetWebApp
                 request,
                 () => new GetUsersResponse
                     {
-                        User = _dataSource.GetUsers()
+                        Users = _dataSource.GetUsers()
                             .ToArray()
                     });
         }
@@ -43,8 +43,7 @@ namespace LoginetWebApp
         [WebMethod(Description = "Получение пользователя по ID")]
         public string GetUser(GetUserRequest request)
         {
-            var user = _dataSource.GetUsers()
-                .FirstOrDefault(o => o.Id == request.UserId);
+            var user = _dataSource.GetUser(request.UserId);
 
             // В т.з. не указано как следует организовать обработку ошибок, по-этому тут в случае если пользователь не найден поднимаю исключение
             if (user == null)
@@ -73,8 +72,7 @@ namespace LoginetWebApp
         [WebMethod(Description = "Получение альбома по ID")]
         public string GetAlbum(GetAlbumRequest request)
         {
-            var album = _dataSource.GetAlbums()
-                .FirstOrDefault(o => o.Id == request.AlbumId);
+            var album = _dataSource.GetAlbum(request.AlbumId);
 
             // В т.з. не указано как следует организовать обработку ошибок, по-этому тут в случае если альбом не найден поднимаю исключение
             if (album == null)

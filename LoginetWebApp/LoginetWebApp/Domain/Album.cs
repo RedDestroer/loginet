@@ -8,13 +8,13 @@ namespace LoginetWebApp.Domain
     [XmlType(Namespace = LoginetWebService.XmlNs)]
     public class Album
     {
-        //[JsonProperty("id")]
+        [JsonProperty("id")]
         public int Id { get; set; }
 
-        //[JsonProperty("userId")]
+        [JsonProperty("userId")]
         public int UserId { get; set; }
 
-        //[JsonProperty("name")]
+        [JsonProperty("name")]
         public string Name { get; set; }
     }
 }

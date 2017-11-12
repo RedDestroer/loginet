@@ -12,9 +12,23 @@ namespace LoginetWebApp.Abstract
         IEnumerable<User> GetUsers();
 
         /// <summary>
+        /// Возвращает пользователя по его id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        User GetUser(int id);
+
+        /// <summary>
         /// Возвращает список альбомов
         /// </summary>
         /// <returns></returns>
         IEnumerable<Album> GetAlbums();
+
+        /// <summary>
+        /// Возвращает альбом по его id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        Album GetAlbum(int id);
     }
 }

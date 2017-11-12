@@ -9,6 +9,6 @@ namespace LoginetWebApp.LoginetWebServiceTypes
     public class GetUsersResponse
         : ResponseBase
     {
-        public User[] User { get; set; }
+        public User[] Users { get; set; }
     }
 }
