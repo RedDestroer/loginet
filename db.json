@@ -1,4 +1,37 @@
 {
-  "id": 1,
-  "title": "hello"
+  "users": [
+    {
+      "id": 1,
+      "name": "user1",
+      "email": "user1@domain.com"
+    },
+    {
+      "id": 2,
+      "name": "user2",
+      "email": "user2@domain.com"
+    },
+    {
+      "id": 3,
+      "name": "user3",
+      "email": "user2@domain.com"
+    }
+  ],
+  "albums": [
+    {
+      "userId": 1
+      "name": "album1"
+    },
+    {
+      "userId": 1
+      "name": "album2"
+    },
+    {
+      "userId": 2
+      "name": "album3"
+    },
+    {
+      "userId": 4
+      "name": "album4"
+    }
+  ]
 }
