@@ -15,8 +15,6 @@ namespace LoginetWebApp.Domain
         public string Name { get; set; }
 
         [JsonProperty("email")]
-        [XmlIgnore]
-        [JsonIgnore]
         public string Email { get; set; }
     }
 }

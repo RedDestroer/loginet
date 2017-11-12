@@ -3,6 +3,9 @@ using LoginetWebApp.Abstract;
 
 namespace LoginetWebApp.Impl
 {
+    /// <summary>
+    /// Контейнер, заменяющий IOC, чтобы не цеплять лишних зависимостей
+    /// </summary>
     public class Container
         : IContainer
     {
@@ -15,11 +18,19 @@ namespace LoginetWebApp.Impl
             _dataSource = new DataSource(_options.DataSourceUri);
         }
 
+        /// <summary>
+        /// Источник данных для сервиса
+        /// </summary>
+        /// <returns></returns>
         public IDataSource ResolveDataSource()
         {
             return _dataSource;
         }
 
+        /// <summary>
+        /// Настройки сервиса
+        /// </summary>
+        /// <returns></returns>
         public IOptions ResolveoOptions()
         {
             return _options;

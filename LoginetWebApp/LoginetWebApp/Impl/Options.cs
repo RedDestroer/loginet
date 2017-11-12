@@ -3,6 +3,9 @@ using LoginetWebApp.Abstract;
 
 namespace LoginetWebApp.Impl
 {
+    /// <summary>
+    /// Настройки сервиса
+    /// </summary>
     public class Options
         : IOptions
     {
@@ -10,8 +13,15 @@ namespace LoginetWebApp.Impl
         {
         }
 
+        /// <summary>
+        /// Корень, откуда обращаться к веб-сервису с базой данных
+        /// </summary>
         public string DataSourceUri { get; private set; }
 
+        /// <summary>
+        /// Создание настроек
+        /// </summary>
+        /// <returns></returns>
         public static Options Create()
         {
             var options = new Options();
