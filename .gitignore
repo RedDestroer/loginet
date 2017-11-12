@@ -101,8 +101,10 @@ $tf/
 
 # ReSharper is a .NET coding add-in
 _ReSharper*/
-*.[Rr]e[Ss]harper
-*.DotSettings.user
+.[Rr]e[Ss]harper
+.DotSettings.user
+.DotSettings
+.csproj.DotSettings
 
 # JustCode is a .NET coding add-in
 .JustCode
